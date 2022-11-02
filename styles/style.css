@@ -1,16 +1,33 @@
 /**** Lien Police Ecriture ****/
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
-
 body{
-    min-height: 100vh;
-    background: linear-gradient(to top, #f2f2f2 0%, #d7bea0 100%);
+    display: flex;
+    background: white;
+    justify-content: center;
+    flex-direction: column;
 } 
 
-h1{
+.content{
+    min-height: 100vh;
+    margin: 2px;
+    border-radius: 3px;
+    background: linear-gradient(to top, #f2f2f2 0%, #af9370 100%);
+}
+
+h1, h2, h3, footer{
     font-family: 'Inter', sans-serif;
     text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
     font-weight: 800;
     font-size: 11px;
     margin-top: 15px;
@@ -18,27 +35,35 @@ h1{
 }
 
 h2{
-    font-family: 'Inter', sans-serif;
-    text-align: center;
     font-weight: 400;
     font-size: 7px;
 }
 
 figure{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     background: white;
+    margin-right: 15px;
+    margin-left: 15px;
     box-shadow: 0 3px 10px black;
-    margin-right: 5px;
-    margin-left: 5px;
+}
+
+.lien__img{
+    display: flex;
+    justify-content: center;
 }
 
 img{
     width: 75%;
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+/**** Changement du curseur sur image ****/
+img:hover{
+    cursor: zoom-in;
 }
 
 .legende{
@@ -50,13 +75,11 @@ img{
 
 main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
 }
 
 h3{
-    font-family: 'Inter', sans-serif;
-    text-align: center;
     font-weight: 800;
     font-size: 11px;
     margin-top: 20px;
@@ -71,34 +94,32 @@ h3{
 }
 
 footer{
-    font-family: 'Inter', sans-serif;
-    text-align: center;
     font-weight: 500;
     font-size: 9px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
-/**** Couleur de mon lien ****/
-
-a{
+/**** Couleur du lien + changement du curseur ****/
+.lien__wiki{
     text-decoration: none;
     color: #A4753D;
 }
 
-a:visited{
+.lien__wiki:hover{
+    cursor: pointer;
+}
+
+.lien__wiki:visited{
     color: #A4753D;
 }
 
-
 /**** Format Desktop ****/
-
 @media (min-width: 480px){
     h1{
         font-size: 32px;
         margin-top: 35px;
         margin-bottom: 15px;
     }
-
 
     h2{
         font-size: 18px;
@@ -108,7 +129,6 @@ a:visited{
         font-size: 14px;
         margin-bottom: 8px;
     }
-
 
     h3{
         font-size: 28px;
