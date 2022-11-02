@@ -114,7 +114,7 @@ footer{
 }
 
 /**** Format Desktop ****/
-@media (min-width: 480px){
+@media (min-width: 430px){
     h1{
         font-size: 32px;
         margin-top: 35px;
