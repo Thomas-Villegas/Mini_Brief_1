@@ -1,53 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <title>FKJ</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <title>FKJ</title>
-</head>
-
-<body>
-    <div class="content">
-        <header>
-            <h1>FKJ - French Kiwi Juice - Vincent Fenton</h1>
-            <h2>Un artiste multi-instrumentiste</h2>
+    <body>
+        <header class="header">
+            <h1 class="header__titre">FKJ - French Kiwi Juice - Vincent Fenton</h1>
+            <p class="header__sous__titre">Un artiste multi-instrumentiste</p>
         </header>
 
-        <figure>
-            <a class="lien__img" href="images/img_fkj_grande.png" target="_blank">
-                <img src="images/img_fkj_petite.png" title="Live's FKJ at Salar de Uyuni" alt="Photo de FKJ">
+        <figure class="figure">
+            <a class="figure__lien" href="images/img_fkj_grande.png" target="_blank">
+                <img class="figure__img" src="images/img_fkj_petite.png" title="Live's FKJ at Salar de Uyuni" alt="Photo de FKJ">
             </a>
-            <span class="legende">Live dans le salar de Uyuni</span>
+            <figcaption class="figure__legende">Live dans le salar de Uyuni</figcaption>
         </figure>
 
-        <main>
-            <h3>Timeline de Vincent Fenton :</h3>
-            <ul class="list">
+        <section class="section">
+            <h2 class="section__titre">Timeline de Vincent Fenton :</h2>
+            <ul class="section__liste">
                 <li><b>1990</b> - Naissance de Vincent</li>
-                <br />
                 <li><b>2012</b> - EP “The Twins”</li>
-                <br />
                 <li><b>2013</b> - EP “Time For a Change”</li>
-                <br />
                 <li><b>2014</b> - EP “Take Off”</li>
-                <br />
                 <li><b>2017</b> - Album “French Kiwi Juice”</li>
-                <br />
                 <li><b>2019</b> - EP “Ylang Ylang”</li>
-                <br />
                 <li><b>2020</b> - EP “Just Piano”</li>
-                <br />
                 <li><b>2022</b> - Album “V I N C E N T”</li>
             </ul>
-        </main>
+        </section>
 
-        <footer>
-            <p>Retrouvez la toute biographie de FKJ sur :<br />
-                <a class="lien__wiki" href="https://fr.wikipedia.org/wiki/French_Kiwi_Juice">Wikipédia</a>
-            </p>
+        <footer class="footer">
+            <span class="footer__text">Retrouvez la toute biographie de FKJ sur :
+                <br/><a class="footer__lien" href="https://fr.wikipedia.org/wiki/French_Kiwi_Juice">Wikipédia</a>
+            </span>
         </footer>
-    </div>
-</body>
-    
-    </html>
+    </body>
+</html>
