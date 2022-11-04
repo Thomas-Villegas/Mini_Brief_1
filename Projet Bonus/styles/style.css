@@ -13,10 +13,6 @@ body{
     font-family: 'poppins', sans-serif;
 }
 
-.header{
-
-}
-
 .header__title{
     font-size: 32px;
     font-weight: 400;
@@ -48,6 +44,9 @@ body{
     padding: 4%;
 }
 
+.form__age__optional{
+    font-size: 12px;
+}
 
 #name, #email, #age{
     border-radius: 2px;
@@ -83,6 +82,10 @@ input[type=radio]{
     line-height: 1.7em;
 }
 
+.form__improvation__check{
+    font-size: 12px;
+}
+
 input[type=checkbox]{
     width: 1.7em;
     height: 1.7em;
@@ -108,4 +111,10 @@ input[type=checkbox]{
     font-size: 16px;
     margin-top: 34px;
     height: 45px;
+}
+
+/**** Reste à faire le format téléphone ****/
+@media(max-width: 685px){
+    *{display: none;
+    }
 }

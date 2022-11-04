@@ -11,7 +11,7 @@
             <span class="header__subtitle">Thank you for taking the time for help us improve the platform</span>
         </header>
 
-        <form class="form" method="post" action="XXX.php">
+        <form class="form" method="post" action="traitement.php">
             <fieldset class="fieldset">
                 <label class="form__name" for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name" required>
@@ -19,11 +19,11 @@
                 <label class="form__email" for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="Enter your Email" required>
 
-                <label class="form__age" for="age">Age <span class="form__optional">(optional)</span></label>
+                <label class="form__age" for="age">Age <span class="form__age__optional">(optional)</span></label>
                 <input type="number" name="age" id="age" placeholder="Age">
 
                 <label class="form__role" for="role">Which option best describes your current role?</label>
-                <select name="role" id="role">
+                <select name="role" id="role" required>
                     <option value="none">Select current role</option>
                     <option value="student">Student</option>
                     <option value="teacher">Teacher</option>
@@ -31,13 +31,13 @@
                 </select>
 
                 <p class="form__recommend">
-                    Would you recommend freeCodeCamp to a friend?<br/>
+                    Would you recommend freeCodeCamp to a friend?<br>
 
                     <input type="radio" name="recommend" value="definitly" id="definitly" checked>
-                    <label for="definitly">Definitly</label><br/>
+                    <label for="definitly">Definitly</label><br>
 
                     <input type="radio" name="recommend" value="maybe" id="maybe">
-                    <label for="maybe">Maybe</label><br/>
+                    <label for="maybe">Maybe</label><br>
 
                     <input type="radio" name="recommend" value="notsure" id="notsure">
                     <label for="notsure">Not Sure</label>
@@ -60,36 +60,36 @@
                 </select>
 
                 <p class="form__improvation">
-                    What would you like to see improved?<br/>
+                    What would you like to see improved? <span class="form__improvation__check">(Check all that apply)</span><br>
                     <input type="checkbox" name="frontend" id="frontend">
-                    <label for="frontend">Front-end Projects</label><br/>
+                    <label for="frontend">Front-end Projects</label><br>
 
                     <input type="checkbox" name="backend" id="backend">
-                    <label for="backend">Back-end Projects</label><br/>
+                    <label for="backend">Back-end Projects</label><br>
 
                     <input type="checkbox" name="datavisual" id="datavisual">
-                    <label for="datavisual">Data Visualization</label><br/>
+                    <label for="datavisual">Data Visualization</label><br>
 
                     <input type="checkbox" name="challenges" id="challenges">
-                    <label for="challenges">Challenges</label><br/>
+                    <label for="challenges">Challenges</label><br>
 
                     <input type="checkbox" name="opensource" id="opensource">
-                    <label for="opensource">Open Source Community</label><br/>
+                    <label for="opensource">Open Source Community</label><br>
 
                     <input type="checkbox" name="gitter" id="gitter">
-                    <label for="gitter">Gitter help rooms</label><br/>
+                    <label for="gitter">Gitter help rooms</label><br>
 
                     <input type="checkbox" name="videos" id="videos">
-                    <label for="videos">Videos</label><br/>
+                    <label for="videos">Videos</label><br>
 
                     <input type="checkbox" name="meetups" id="meetups">
-                    <label for="meetups">City Meetups</label><br/>
+                    <label for="meetups">City Meetups</label><br>
 
                     <input type="checkbox" name="wiki" id="wiki">
-                    <label for="wiki">Wiki</label><br/>
+                    <label for="wiki">Wiki</label><br>
 
                     <input type="checkbox" name="forum" id="forum">
-                    <label for="forum">Forum</label><br/>
+                    <label for="forum">Forum</label><br>
 
                     <input type="checkbox" name="addcourses" id="addcourses">
                     <label for="addcourses">Additional Courses</label>
