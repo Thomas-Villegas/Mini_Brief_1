@@ -1,6 +1,7 @@
 /**** Lien Police Ecriture ****/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
+/**** BACKGROUND ****/
 body{
     display: flex;
     justify-content: space-between;
@@ -9,6 +10,7 @@ body{
     min-height: 100vh;
 }
 
+/**** TITLE ****/
 .header{
     display: flex;
     justify-content: center;
@@ -16,7 +18,7 @@ body{
     flex-direction: column;
 }
 
-.header__titre{
+.header__title{
     font-family: 'Inter', sans-serif;
     text-align: center;
     font-weight: 800;
@@ -25,7 +27,7 @@ body{
     margin-bottom: 5px;
 }
 
-.header__sous__titre{
+.header__subtitle{
     font-family: 'Inter', sans-serif;
     text-align: center;
     font-size: 8px;
@@ -33,6 +35,7 @@ body{
     
 }
 
+/**** IMAGE ****/
 .figure{
     display: flex;
     justify-content: center;
@@ -44,19 +47,18 @@ body{
     box-shadow: 0 3px 10px black;
 }
 
-.figure__lien{
+.figure__link{
     display: flex;
     justify-content: center;
 }
 
-.figure__img{
+.figure__text__img{
     width: 75%;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-/**** Changement du curseur sur image ****/
-.figure__img:hover{
+.figure__text__img:hover{
     cursor: zoom-in;
 }
 
@@ -69,13 +71,14 @@ body{
     margin-bottom: 3px;
 }
 
+/**** TIMELINE ****/
 .section{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.section__titre{
+.section__title{
     font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
@@ -85,7 +88,7 @@ body{
     margin-bottom: 40px;
 }
 
-.section__liste{
+.section__list{
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 9px;
@@ -93,6 +96,7 @@ body{
     margin: auto;
 }
 
+/**** WIKI ****/
 .footer{
     display: flex;
     justify-content: center;
@@ -106,29 +110,28 @@ body{
     font-size: 9px;    
 }
 
-/**** Couleur du lien + changement du curseur ****/
-.footer__lien{
+.footer__text__link{
     text-decoration: none;
     color: #A4753D;
 }
 
-.footer__lien:hover{
+.footer__link:hover{
     cursor: pointer;
 }
 
-.footer__lien:visited{
+.footer__link:visited{
     color: #A4753D;
 }
 
-/**** Format Desktop ****/
+/**** RESPONSIVE ****/
 @media (min-width: 430px){
-    .header__titre{
+    .header__title{
         font-size: 32px;
         margin-top: 35px;
         margin-bottom: 15px;
     }
 
-    .header__sous__titre{
+    .header__subtitle{
         font-size: 18px;
     }
 
@@ -137,13 +140,13 @@ body{
         margin-bottom: 8px;
     }
 
-    .section__titre{
+    .section__title{
         font-size: 28px;
         font-weight: 600;
         margin-top: 20px;
     }
 
-    .section__liste{
+    .section__list{
         font-size: 18px;
         font-weight: 400;
     }
