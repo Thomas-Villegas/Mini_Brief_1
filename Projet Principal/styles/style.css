@@ -1,117 +1,101 @@
 /**** FONT ****/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Quicksand', sans-serif;
+}
 
 /**** BACKGROUND ****/
 body{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     background: linear-gradient(to top, #f2f2f2 0%, #af9370 100%);
     min-height: 100vh;
+    margin: auto;
 }
 
 /**** TITLE ****/
 .header{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .header__title{
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    font-size: 11px;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 15px 0 10px 0;
 }
 
 .header__subtitle{
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    font-size: 8px;
     font-weight: 400;
-    
+    font-size: 9px;
+    margin: auto;
 }
 
 /**** IMAGE ****/
 .figure{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     background: white;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 10px 15px 0 15px;
     box-shadow: 0 3px 10px black;
 }
 
-.figure__link{
+.figure__img{
     display: flex;
     justify-content: center;
+    width: 66%;
+    margin: 5px 0 5px 0;
 }
 
-.figure__text__img{
-    width: 75%;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.figure__text__img:hover{
-    cursor: zoom-in;
-}
-
-.figure__legende{
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    font-weight: 300;
+.figure__figcaption{
     font-style: italic;
+    font-weight: 300;
     font-size: 7px;
-    margin-bottom: 3px;
+    margin: 0 0 5px 0;
 }
 
 /**** TIMELINE ****/
 .section{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .section__title{
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 11px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 20px 0 20px 0;
 }
 
 .section__list{
-    font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 9px;
-    line-height: 3;
-    margin: auto;
+    line-height: 2.5;
+    margin: 0;
 }
 
 /**** WIKI ****/
 .footer{
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 
 .footer__text{
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 9px;    
 }
 
-.footer__text__link{
+a{
     text-decoration: none;
+}
+
+.footer__link{
+    font-weight: 700;
+    font-size: 10px;
     color: #A4753D;
 }
 
@@ -123,37 +107,94 @@ body{
     color: #A4753D;
 }
 
-/**** RESPONSIVE ****/
-@media (min-width: 430px){
+/**** RESPONSIVE TABLET ****/
+@media (min-width: 768px){
     .header__title{
-        font-size: 32px;
-        margin-top: 35px;
-        margin-bottom: 15px;
+        font-size: 24px;
+        margin: 35px 0 15px 0;
     }
 
     .header__subtitle{
-        font-size: 18px;
+        font-size: 14px;
     }
 
-    .figure__legende{
-        font-size: 14px;
-        margin-bottom: 8px;
+    .figure{
+        margin: 20px 30px 0 30px;
+    }
+
+    .figure__img{
+        margin: 10px 0 10px 0;
+    }
+
+    .figure__figcaption{
+        font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .section__title{
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 600;
-        margin-top: 20px;
+        margin: 30px 0 20px 0;
     }
 
     .section__list{
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 400;
     }
 
     .footer__text{
+        font-weight: 500;
+        font-size: 16px;
+        margin: 40px 0 50px 0;
+    }
+
+    .footer__link{
         font-weight: 600;
+        font-size: 17px;
+    }
+}
+
+/**** RESPONSIVE DESKTOP ****/
+@media(min-width: 1025px){
+    .header__title{
+        font-size: 32px;
+        margin: 40px 0 20px 0;
+    }
+
+    .header__subtitle{
         font-size: 20px;
-        margin-top: 50px;
+    }
+
+    .figure{
+        margin: 25px 40px 0 40px;
+    }
+
+    .figure__img{
+        margin: 12px 0 12px 0;
+    }
+
+    .figure__figcaption{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .section__title{
+        font-size: 28px;
+        margin: 45px 0 30px 0;
+    }
+
+    .section__list{
+        font-size: 20px;
+    }
+
+    .footer__text{
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: 50px 0 60px 0;
+    }
+
+    .footer__link{
+        font-weight: 700;
+        font-size: 24px;
     }
 }
